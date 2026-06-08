@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERRADROP - Smart Irrigation Dashboard & AI Agriculture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="mainHeader" class="main-header">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-droplet text-gradient"></i>
+                </div>
+                <span class="logo-text">TERRADROP</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active">Beranda</a>
+                <a href="#features" class="nav-link">Fitur</a>
+                <a href="#dashboard" class="nav-link">Dashboard</a>
+                <a href="#workflow" class="nav-link">Cara Kerja</a>
+                <a href="#tech" class="nav-link">Teknologi</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#testimonials" class="nav-link">Testimoni</a>
+            </nav>
+            <button class="btn-primary" onclick="openModal()">Mulai Sekarang</button>
+            <button class="menu-toggle" id="mobileMenuBtn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-text-content">
+                <div class="badge-light">
+                    <i class="fa-solid fa-microchip"></i> AI-Powered Smart Irrigation
+                </div>
+                <h1 class="hero-title">Solusi Penyiraman Pintar Berbasis AI untuk <span class="text-gradient">Pertanian Modern</span></h1>
+                <p class="hero-desc">TERRADROP membantu memantau kelembaban tanah, pH, dan sistem penyiraman otomatis secara realtime menggunakan teknologi AI dan IoT terintegrasi.</p>
+                <div class="hero-cta-group">
+                    <a href="#dashboard" class="btn-gradient-dash"><i class="fa-solid fa-chart-line"></i> Lihat Dashboard</a>
+                    <a href="#features" class="btn-secondary"><i class="fa-solid fa-circle-play"></i> Pelajari lebih lanjut</a>
+                </div>
+            </div>
+            <div class="hero-image-content">
+                <div class="hero-stats-card-wrapper">
+                    <div class="hero-stat-box box-blue-light">
+                        <div class="icon-wrap"><i class="fa-solid fa-chart-simple"></i></div>
+                        <h3>72%</h3>
+                        <p>Kelembaban Tanah</p>
+                    </div>
+                    <div class="hero-stat-box box-green-light">
+                        <div class="icon-wrap"><i class="fa-solid fa-flask"></i></div>
+                        <h3>6.8</h3>
+                        <p>pH Tanah</p>
+                    </div>
+                    <div class="hero-stat-box box-cyan-light">
+                        <div class="icon-wrap"><i class="fa-solid fa-faucet-drip"></i></div>
+                        <h3>45%</h3>
+                        <p>Penghematan Air</p>
+                    </div>
+                    <div class="hero-stat-box box-purple-light">
+                        <div class="icon-wrap"><i class="fa-solid fa-bolt"></i></div>
+                        <h3>Optimal</h3>
+                        <p>Status AI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="center-header">
+                <div class="badge-light-center">Fitur Unggulan</div>
+                <h2 class="section-title">Teknologi Canggih untuk <span class="text-gradient">Pertanian Pintar</span></h2>
+                <p class="section-desc">Kelola sistem irigasi dengan mudah menggunakan kombinasi sensor IoT dan kecerdasan buatan.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feat-icon blue"><i class="fa-solid fa-satellite-dish"></i></div>
+                    <h3>Monitoring Tanah Realtime</h3>
+                    <p>Pantau kondisi kelembaban dan pH tanah secara realtime dengan sensor presisi tinggi.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feat-icon orange"><i class="fa-solid fa-faucet-drip"></i></div>
+                    <h3>Penyiraman Otomatis</h3>
+                    <p>Sistem sprinkler pintar yang bekerja otomatis berdasarkan data sensor dan cuaca.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feat-icon purple"><i class="fa-solid fa-brain"></i></div>
+                    <h3>Analisis AI Cerdas</h3>
+                    <p>AI menganalisis pola dan memberikan rekomendasi penyiraman yang optimal.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feat-icon cyan"><i class="fa-solid fa-bolt-lightning"></i></div>
+                    <h3>Efisiensi Energi</h3>
+                    <p>Optimalisasi penggunaan daya dengan sistem kontrol pintar hemat energi.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feat-icon light-green"><i class="fa-solid fa-seedling"></i></div>
+                    <h3>Urban Farming Ready</h3>
+                    <p>Cocok untuk pertanian urban, greenhouse, dan hidroponik modern.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feat-icon dark-blue"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Akurasi Data</h3>
+                    <p>Sensor proteksi tinggi memberikan data akurat untuk keputusan tepat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-center-header">
+                <div class="badge-dark">Dashboard Monitoring</div>
+                <h2 class="section-title-dark">Kontrol Penuh di <span class="text-gradient">Ujung Jari Anda</span></h2>
+                <p class="section-desc-dark">Monitoring realtime dengan dashboard modern dan intuitif</p>
+            </div>
+
+            <div class="dashboard-grid-main">
+                <div class="dash-card main-chart-card">
+                    <h4>Kelembaban Tanah (24 Jam)</h4>
+                    <div class="main-chart-wrapper">
+                        <div class="chart-y-axis">
+                            <span>80</span><span>60</span><span>40</span><span>20</span><span>0</span>
+                        </div>
+                        <div class="chart-area-visual">
+                            <svg viewBox="0 0 500 200" preserveAspectRatio="none" class="svg-graph">
+                                <defs>
+                                    <linearGradient id="chartGlow" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#4ADE80" stop-opacity="0.25"/>
+                                        <stop offset="100%" stop-color="#4ADE80" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M 0,60 Q 80,75 160,55 T 320,80 T 420,45 T 500,70 L 500,200 L 0,200 Z" fill="url(#chartGlow)" />
+                                <path d="M 0,60 Q 80,75 160,55 T 320,80 T 420,45 T 500,70" fill="none" stroke="#4ADE80" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                            <div class="chart-dot" style="left: 0%; top: 30%;"></div>
+                            <div class="chart-dot" style="left: 16%; top: 37%;"></div>
+                            <div class="chart-dot" style="left: 32%; top: 27%;"></div>
+                            <div class="chart-dot" style="left: 48%; top: 35%;"></div>
+                            <div class="chart-dot" style="left: 64%; top: 40%;"></div>
+                            <div class="chart-dot" style="left: 80%; top: 22%;"></div>
+                            <div class="chart-dot" style="left: 100%; top: 35%;"></div>
+                        </div>
+                    </div>
+                    <div class="chart-x-axis">
+                        <span>00:00</span><span>04:00</span><span>08:00</span><span>12:00</span><span>16:00</span><span>20:00</span><span>24:00</span>
+                    </div>
+                </div>
+
+                <div class="dashboard-sidebar-stats">
+                    <div class="stat-box-row box-blue">
+                        <div class="stat-box-top">
+                            <i class="fa-solid fa-water"></i>
+                            <span class="status-indicator">Live</span>
+                        </div>
+                        <div class="stat-box-value">72%</div>
+                        <div class="stat-box-label">Kelembaban Tanah</div>
+                    </div>
+                    <div class="stat-box-row box-green">
+                        <div class="stat-box-top">
+                            <i class="fa-solid fa-seedling"></i>
+                            <span class="status-indicator">Normal</span>
+                        </div>
+                        <div class="stat-box-value">6.8</div>
+                        <div class="stat-box-label">pH Tanah</div>
+                    </div>
+                    <div class="stat-box-row box-gold">
+                        <div class="stat-box-top">
+                            <i class="fa-solid fa-temperature-three-quarters"></i>
+                            <span class="status-indicator">Optimal</span>
+                        </div>
+                        <div class="stat-box-value">28°C</div>
+                        <div class="stat-box-label">Suhu Tanah</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid-bottom">
+                <div class="dash-card">
+                    <h4>Penggunaan Air (Liter)</h4>
+                    <div class="mini-chart-container">
+                        <div class="mini-y-axis"><span>60</span><span>45</span><span>30</span><span>15</span><span>0</span></div>
+                        <div class="mini-chart-area">
+                            <svg viewBox="0 0 200 100" preserveAspectRatio="none" class="svg-graph">
+                                <path d="M 0,55 L 33,40 L 66,65 L 100,45 L 133,58 L 166,62 L 200,55" fill="none" stroke="#4ADE80" stroke-width="2"/>
+                            </svg>
+                            <div class="mini-dot" style="left:0%; bottom:45%;"></div>
+                            <div class="mini-dot" style="left:16.5%; bottom:60%;"></div>
+                            <div class="mini-dot" style="left:33%; bottom:35%;"></div>
+                            <div class="mini-dot" style="left:50%; bottom:55%;"></div>
+                            <div class="mini-dot" style="left:66.5%; bottom:42%;"></div>
+                            <div class="mini-dot" style="left:83%; bottom:38%;"></div>
+                            <div class="mini-dot" style="left:100%; bottom:45%;"></div>
+                        </div>
+                    </div>
+                    <div class="mini-x-axis">
+                        <span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span><span>Sab</span><span>Min</span>
+                    </div>
+                </div>
+
+                <div class="dash-card status-device-card">
+                    <h4>Status Perangkat</h4>
+                    <ul class="device-status-list">
+                        <li>
+                            <span class="device-name"><i class="fa-solid fa-wifi"></i> Koneksi IoT</span>
+                            <span class="status-tag status-online">Online</span>
+                        </li>
+                        <li>
+                            <span class="device-name"><i class="fa-solid fa-shower"></i> Sprinkle</span>
+                            <span class="status-tag status-active" id="sprinkleStatus">Aktif</span>
+                        </li>
+                        <li>
+                            <span class="device-name"><i class="fa-solid fa-microchip"></i> Sensor pH</span>
+                            <span class="status-tag status-normal">Normal</span>
+                        </li>
+                    </ul>
+                    <div class="toggle-mode-wrapper">
+                        <span>Mode Otomatis</span>
+                        <label class="switch-toggle">
+                            <input type="checkbox" id="autoModeSwitch" checked>
+                            <span class="slider-round"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="dash-card history-card">
+                    <h4>Riwayat Aktivitas</h4>
+                    <div class="timeline-activity" id="timelineActivity">
+                        <div class="timeline-item item-green">
+                            <span class="time-stamp">14:30</span>
+                            <p class="activity-text">Penyiraman otomatis dimulai</p>
+                        </div>
+                        <div class="timeline-item item-yellow">
+                            <span class="time-stamp">12:15</span>
+                            <p class="activity-text">Kelembaban tanah turun ke 65%</p>
+                        </div>
+                        <div class="timeline-item item-blue">
+                            <span class="time-stamp">09:00</span>
+                            <p class="activity-text">Sensor pH dikalibrasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-recommendation-box">
+                <div class="ai-rec-title">
+                    <i class="fa-solid fa-wand-magic-sparkles text-gradient"></i>
+                    <span>Rekomendasi AI</span>
+                </div>
+                <p class="ai-rec-text">Berdasarkan analisis data 7 hari terakhir, sistem merekomendasikan untuk mengurangi frekuensi penyiraman sebesar 15% pada hari Sabtu dan Minggu untuk mengoptimalkan penggunaan air. Kondisi kelembaban tanah saat ini optimal.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="workflow" class="workflow-section">
+        <div class="container">
+            <div class="center-header">
+                <div class="badge-light-center">Cara Kerja</div>
+                <h2 class="section-title">Sistem Bekerja <span class="text-gradient">Secara Otomatis</span></h2>
+                <p class="section-desc">Proses sederhana namun powerful untuk mengoptimalkan irigasi pertanian Anda</p>
+            </div>
+            <div class="workflow-grid">
+                <div class="workflow-step">
+                    <div class="step-num-icon">
+                        <span>1</span>
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <h3>Sensor Membaca Kondisi</h3>
+                    <p>Sensor kelembaban dan pH tanah mengumpulkan data secara realtime</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-num-icon">
+                        <span>2</span>
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3>AI Menganalisis Data</h3>
+                    <p>Sistem AI memproses data dan memprediksi kebutuhan air tanaman</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-num-icon">
+                        <span>3</span>
+                        <i class="fa-solid fa-faucet-drip"></i>
+                    </div>
+                    <h3>Sprinkler Aktif Otomatis</h3>
+                    <p>Sistem penyiraman bekerja otomatis sesuai rekomendasi AI</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-num-icon">
+                        <span>4</span>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3>Monitoring Realtime</h3>
+                    <p>Pantau dan kontrol sistem dari aplikasi mobile kapan saja</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="btn-gradient-dash" onclick="openModal()">Mulai Gunakan TERRADROP</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="tech-diagram-section">
+        <div class="container">
+            <div class="center-header">
+                <div class="badge-light-center">Sistem Terbuka</div>
+                <h2 class="section-title">Stack Teknologi <span class="text-gradient">Modern & Integrasi</span></h2>
+                <p class="section-desc">Arsitektur reliabilitas sistem tingkat tinggi berlatensi sangat rendah</p>
+            </div>
+            
+            <div class="tech-diagram-wrapper">
+                <div class="tech-node esp32-center">
+                    <div class="node-icon bg-purple"><i class="fa-solid fa-microchip"></i></div>
+                    <h4>ESP32</h4>
+                    <p>Microcontroller</p>
+                </div>
+                
+                <div class="tech-node line-top-left">
+                    <div class="node-icon bg-blue"><i class="fa-solid fa-droplet"></i></div>
+                    <h4>Sensor Kelembaban</h4>
+                    <p>Soil Moisture</p>
+                </div>
+                <div class="tech-node line-top-right">
+                    <div class="node-icon bg-green"><i class="fa-solid fa-flask"></i></div>
+                    <h4>Sensor pH</h4>
+                    <p>pH Meter</p>
+                </div>
+                <div class="tech-node line-bottom-left">
+                    <div class="node-icon bg-orange"><i class="fa-solid fa-brain"></i></div>
+                    <h4>AI Engine</h4>
+                    <p>Smart Analysis</p>
+                </div>
+                <div class="tech-node line-bottom-right">
+                    <div class="node-icon bg-dark-blue"><i class="fa-solid fa-cloud"></i></div>
+                    <h4>IoT Cloud</h4>
+                    <p>Data Storage</p>
+                </div>
+                <div class="tech-node line-far-right">
+                    <div class="node-icon bg-cyan"><i class="fa-solid fa-mobile-button"></i></div>
+                    <h4>Mobile App</h4>
+                    <p>Remote Control</p>
+                </div>
+            </div>
+
+            <div class="tech-performance-stats">
+                <div class="perf-card">
+                    <h3>99.9%</h3>
+                    <p>Uptime Reliability</p>
+                </div>
+                <div class="perf-card">
+                    <h3>&lt;100ms</h3>
+                    <p>Response Time</p>
+                </div>
+                <div class="perf-card">
+                    <h3>24/7</h3>
+                    <p>Monitoring Active</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-benefits-section">
+        <div class="container">
+            <div class="center-header">
+                <div class="badge-light-center">Manfaat</div>
+                <h2 class="section-title">Mengapa Memilih <span class="text-gradient">TERRADROP?</span></h2>
+                <p class="section-desc">Solusi irigasi pintar yang memberikan hasil nyata dan terukur</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item-card">
+                    <div class="b-icon"><i class="fa-solid fa-droplet"></i></div>
+                    <h4>Hemat Air</h4>
+                    <p>Pengurangan penggunaan air hingga 45% dengan sistem penyiraman presisi.</p>
+                </div>
+                <div class="benefit-item-card">
+                    <div class="b-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h4>Monitoring Realtime</h4>
+                    <p>Pantau kondisi tanaman dan sistem irigasi kapan saja, dimana saja.</p>
+                </div>
+                <div class="benefit-item-card">
+                    <div class="b-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h4>Penyiraman Otomatis</h4>
+                    <p>AI menentukan waktu dan durasi penyiraman optimal secara otomatis.</p>
+                </div>
+                <div class="benefit-item-card">
+                    <div class="b-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h4>Efisiensi Energi</h4>
+                    <p>Optimalisasi penggunaan daya dengan sistem kontrol pintar.</p>
+                </div>
+                <div class="benefit-item-card">
+                    <div class="b-icon"><i class="fa-solid fa-building-wheat"></i></div>
+                    <h4>Urban Farming Ready</h4>
+                    <p>Cocok untuk pertanian urban, greenhouse, dan hidroponik modern.</p>
+                </div>
+                <div class="benefit-item-card">
+                    <div class="b-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h4>Akurasi Data</h4>
+                    <p>Sensor presisi tinggi memberikan data akurat untuk keputusan tepat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner-section">
+        <div class="container">
+            <div class="cta-banner-card">
+                <h2>Siap Mengoptimalkan Sistem Irigasi Anda?</h2>
+                <p>Bergabunglah dengan petani modern yang telah merasakan manfaat TERRADROP</p>
+                <button class="btn-cta-light" onclick="openModal()">Mulai Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="center-header">
+                <div class="badge-light-center">Testimoni</div>
+                <h2 class="section-title">Apa Kata <span class="text-gradient">Pengguna Kami?</span></h2>
+                <p class="section-desc">Bergabunglah dengan petani modern yang telah merasakan manfaat TERRADROP</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testi-card">
+                    <div class="stars-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testi-quote">"TERRADROP benar-benar mengubah cara saya bertani di lahan terbatas. Hemat air 40% dan tanaman tumbuh lebih sehat. Sistem AI-nya sangat akurat!"</p>
+                    <div class="testi-user">
+                        <div class="user-avatar-initials bg-blue">BS</div>
+                        <div>
+                            <h4>Budi Santoso</h4>
+                            <p>Urban Farmer, Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="stars-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testi-quote">"Monitoring realtime sangat membantu saya mengontrol greenhouse dari rumah. Aplikasinya user-friendly dan notifikasinya tepat waktu."</p>
+                    <div class="testi-user">
+                        <div class="user-avatar-initials bg-purple">SR</div>
+                        <div>
+                            <h4>Siti Rahmawati</h4>
+                            <p>Greenhouse Owner, Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="stars-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testi-quote">"Integrasi dengan sistem hidroponik saya sempurna. Data pH dan kelembaban sangat presisi. Investasi terbaik untuk pertanian modern!"</p>
+                    <div class="testi-user">
+                        <div class="user-avatar-initials bg-green">AH</div>
+                        <div>
+                            <h4>Ahmad Hidayat</h4>
+                            <p>Hydroponic Farmer, Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overall-badge-rating">
+                <div class="avatar-stack-circles">
+                    <span class="mini-circle bg-blue">BS</span>
+                    <span class="mini-circle bg-purple">SR</span>
+                    <span class="mini-circle bg-green">AH</span>
+                </div>
+                <div class="rating-stars-num">
+                    <span class="star-gold"><i class="fa-solid fa-star"></i> 5.0</span>
+                    <p>Dipercaya oleh 500+ petani modern di seluruh Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-grid-layout">
+            <div class="footer-left-info">
+                <div class="logo-area" style="margin-bottom: 16px;">
+                    <div class="logo-icon"><i class="fa-solid fa-droplet text-gradient"></i></div>
+                    <span class="logo-text text-white">TERRADROP</span>
+                </div>
+                <p>Solusi irigasi pintar berbasis AI untuk pertanian modern. Hemat air, tingkatkan hasil panen.</p>
+            </div>
+            <div class="footer-links-column">
+                <h4>Produk</h4>
+                <a href="#features">Fitur</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#tech">Teknologi</a>
+                <a href="#">Harga</a>
+            </div>
+            <div class="footer-links-column">
+                <h4>Perusahaan</h4>
+                <a href="#about">Tentang Kami</a>
+                <a href="#">Blog</a>
+                <a href="#">Karir</a>
+                <a href="#">Kontak</a>
+            </div>
+            <div class="footer-links-column">
+                <h4>Dukungan</h4>
+                <a href="#">Dokumentasi</a>
+                <a href="#">Tutorial</a>
+                <a href="#">FAQ</a>
+                <a href="#">Komunitas</a>
+            </div>
+            <div class="footer-links-column">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="container footer-bottom-credits">
+            <div class="footer-contacts">
+                <span><i class="fa-regular fa-envelope"></i> contact@terradrop.com</span>
+                <span><i class="fa-solid fa-phone"></i> +62 812 3456 7890</span>
+                <span><i class="fa-solid fa-location-dot"></i> Jakarta, Indonesia</span>
+            </div>
+            <div class="footer-newsletter-box">
+                <input type="email" placeholder="Email Anda">
+                <button><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </footer>
+
+    <div id="registerModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeModal()">&times;</button>
+            <div class="modal-header-section">
+                <h2>Mulai Revolusi Pertanian Anda</h2>
+                <p>Isi formulir di bawah dan tim kami akan menghubungi Anda untuk demo gratis</p>
+            </div>
+            <form id="registrationForm" onsubmit="handleRegister(event)">
+                <div class="form-group">
+                    <label for="fullName">Nama Lengkap</label>
+                    <div class="input-with-icon">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" id="fullName" placeholder="John Doe" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon</label>
+                    <div class="input-with-icon">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" id="phone" placeholder="+62 812 3456 7890" required>
+                    </div>
+                </div>
+                <div class="form-row-double">
+                    <div class="form-group">
+                        <label for="company">Perusahaan/Organisasi</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-building"></i>
+                            <input type="text" id="company" placeholder="PT. Pertanian Modern">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Lokasi</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" id="location" placeholder="Jakarta">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="farmType">Jenis Pertanian</label>
+                    <div class="custom-select-wrapper">
+                        <select id="farmType" class="custom-select" required>
+                            <option value="" disabled selected>Pilih Jenis Pertanian</option>
+                            <option value="urban">Urban Farming</option>
+                            <option value="greenhouse">Greenhouse</option>
+                            <option value="hidroponik">Hidroponik</option>
+                            <option value="tradisional">Pertanian Tradisional</option>
+                            <option value="perkebunan">Perkebunan</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit-form">Mulai Sekarang</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="successPopup" class="success-popup-card">
+        <div class="success-icon-circle"><i class="fa-solid fa-check"></i></div>
+        <h3>Berhasil Terdaftar!</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
